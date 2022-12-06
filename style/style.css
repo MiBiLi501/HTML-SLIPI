@@ -20,7 +20,7 @@ p {
     width: 5rem;
     border: 1px solid rgb(48, 48, 48);
     border-radius: 3px;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .img-container{
@@ -101,7 +101,7 @@ nav {
     display: none
 }
 .gray-bg{
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(247, 247, 247);
 }
 
 @keyframes moving-dot
