@@ -20,7 +20,7 @@ p {
     height: 5px;
     background: rgba(255, 255, 255, 0.295);
     width: 100%;
-    transition: height 0.4s ease-in-out;
+    transition: height 0.2s ease-in-out;
 }
 
 .test:hover::before {
@@ -30,13 +30,13 @@ p {
 .test::after {
     content: "";
     display: block;
-    position: relative;
+    position: absolute;
     /* margin-top: 9px; */
     bottom: 0;
     height: 0;
-    background: rgba(0, 0, 0, 0.315);
+    background: rgba(0, 0, 0, 0.568);
     width: 100%;
-    transition: height 0.4s ease-in-out;
+    transition: height 0.2s ease-in-out;
 
 }
 
@@ -53,6 +53,7 @@ p {
     height: 60px;
     width: 10rem;
     /* border-top: 4px solid rgb(150, 255, 173); */
+    position: relative;
     border-radius: 2px;
     margin: 2rem 0;
     background-image: linear-gradient(180deg, rgb(86, 202, 111), rgb(169, 255, 58));
@@ -61,11 +62,13 @@ p {
     /* display: flex; */
     align-items: center;
     overflow: hidden;
+    transition: filter 0.4s ease-in-out
+
 }
 
-/* .test:hover {
-    text
-} */
+.test:hover {
+    filter: brightness(0.8)
+} 
 
 .ai-c{
     align-items: center;

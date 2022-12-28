@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style2.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,9 +22,9 @@
         
     </div>
 
-    <section class="gray-bg">
+    <section class="gray-bg form-container">
         <form action="" method="post">
-            <div>
+            <div class="question">
                 <label for="age">Please select your age</label>
                 <select name="select-age" id="age">
                     <option value="">0-10</option>
@@ -35,22 +35,22 @@
                 </select>
             </div>
 
-            <div>
+            <div class="question">
                 <label for="sleep">How long do you sleep daily (hours)</label>
                 <input type="number" name="sleep" id="sleep">
             </div>
 
-            <div>
+            <div class="question">
                 <label for="weight">Enter your weight (kg)</label>
                 <input type="number" name="weight" id="weight">
             </div>
 
-            <div>
+            <div class="question">
                 <label for="height">Enter your height (cm)</label>
                 <input type="number" name="height" id="height">
             </div>
 
-            <div>
+            <div class="question">
                 <label for="train">Do you often train your body?</label>
                 <select name="select-age" id="train">
                     <option value="1">Yes</option>
@@ -58,7 +58,7 @@
                 </select>
             </div>
 
-            <div>
+            <div class="question">
                 <label for="vegetables">Do you eat vegetables?</label>
                 <select name="select-age" id="vegetables">
                     <option value="1">Yes</option>
@@ -66,6 +66,23 @@
                 </select>
             </div>
 
+            <div class="question">
+                <label for="fruit">Do you eat fruits everyday?</label>
+                <select name="select-age" id="fruit">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="vegetables">Do you use ?</label>
+                <select name="select-age" id="vegetables">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <button>Submit</button>
         </form>
     </section>
 </body>

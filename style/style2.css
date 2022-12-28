@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-width: 600px;
+}
+
+.site-header{
+
+    height: 70px;
+    /* background-color:rgb(86, 202, 111); */
+    background-image: linear-gradient(180deg, rgb(86, 202, 111), rgb(169, 255, 58));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.76);
+}
+
+h1.logo{
+    padding: 0 2rem 0 1rem;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 0 0 0.5vh;
+    height: 100%;
+}
+
+.extra-info{
+    max-width: 90%;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item, .nav-item>a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 0 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.gray-bg{
+    background-color: rgb(247, 247, 247);
+}
+
+.form-container{
+    padding: 10%;
+}
+
+.question{
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.question>label{
+    display: block;
+}
+
+.question>*:not(label){
+    margin-top: 1rem;
+    font-size: 20px;
+    width: 100%;
+    padding-top: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+.question>*:not(label):focus{
+    border-bottom: 3px solid black;
+}
