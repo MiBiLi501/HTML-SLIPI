@@ -17,7 +17,7 @@
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    min-width: 600px;
+    min-width: 375px;
 }
 
 .site-header{
@@ -96,7 +96,7 @@ nav {
     background-size: 50%;
 }
 
-form{
+.form{
     padding: 1rem;
     background-color: aliceblue;
 }
@@ -170,7 +170,7 @@ form{
 
 .result label{
     color: var(--sky-blue);
-    font-size: 20px;
+    font-size: 1rem;
     padding: 20px;
     display: block;
 }
@@ -190,7 +190,16 @@ form{
     align-items: center; */
 }
 
+.card-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+    z-index: 2;
+}
+
 .card{
+    position: relative;
     background-color: aliceblue;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     height: 15rem;
@@ -251,5 +260,12 @@ form{
 
     .header-menu{
         justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .meter-container{
+        display: flex;
+        flex-direction: column;
     }
 }
