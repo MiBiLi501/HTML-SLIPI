@@ -13,10 +13,12 @@
         <div class="site-header">
         
             <div class="header-menu">
-                <h1 class="logo">SLIPI</h1>
+                <a href="/index.html">
+                    <h1 class="logo">SLIPI</h1>
+                </a>
                 <nav>
                     <div class="nav-item"><a href="">About</a></div>
-                    <div class="nav-item"><a href="">Fun Fact</a></div>
+                    <div class="nav-item"><a href="">Forum</a></div>
                     <div class="nav-item d-none"><a href="">Start</a></div>
                     <div class="hamburger">
                         <div class="bar"></div>
@@ -31,112 +33,120 @@
 
     <div class="dropdown-menu" data-toggle="false">
         <div class="menu-item"><a href="">About</a></div>
-        <div class="menu-item"><a href="">Fun Fact</a></div>
+        <div class="menu-item"><a href="">Forum</a></div>
         <div class="menu-item"><a href="/test.html">Start</a></div>
     </div>
 
     <section class="gray-bg form-container">
-        <form action="" method="post">
-            <div class="question">
-                <label for="age">Please select your age</label>
-                <select name="select-age" id="age">
-                    <option value="0">0-10</option>
-                    <option value="1">11-20</option>
-                    <option value="2">21-30</option>
-                    <option value="3">31-40</option>
-                    <option value="4">40+</option>
-                </select>
+        <!-- <form action="" method="post"> -->
+            <div class="form">
+                <div class="question">
+                    <label for="age">Please select your age</label>
+                    <select name="select-age" id="age">
+                        <option value="0">0-10</option>
+                        <option value="1">11-20</option>
+                        <option value="2">21-30</option>
+                        <option value="3">31-40</option>
+                        <option value="4">40+</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="sleep">How long do you sleep daily (hours)</label>
+                    <input type="number" name="sleep" id="sleep" data-type="time">
+                </div>
+                <div class="question">
+                    <label for="weight">Enter your weight (kg)</label>
+                    <input type="number" name="weight" id="weight">
+                </div>
+                <div class="question">
+                    <label for="height">Enter your height (cm)</label>
+                    <input type="number" name="height" id="height">
+                </div>
+                <div class="question">
+                    <label for="vegetables">Do you like to eat vegetable?</label>
+                    <select name="select-vegetable" id="vegetable">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="fruit">Do you eat fruits everyday?</label>
+                    <select name="select-fruit" id="fruit">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="vegetables">How often do you eat snacks?</label>
+                    <select name="select-snack" id="snack">
+                        <option value="0">less than once a week</option>
+                        <option value="1">Once a week</option>
+                        <option value="2">Twice a week</option>
+                        <option value="3">Three or more a week</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="water">How many glasses of water do you drink each day?</label>
+                    <input type="number" name="water" id="water">
+                </div>
+                <div class="question">
+                    <label for="train">Do you often train your body?</label>
+                    <select name="select-age" id="train">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="btn-container"><div class="submit-button">Submit</div></div>
             </div>
-
-            <div class="question">
-                <label for="sleep">How long do you sleep daily (hours)</label>
-                <input type="number" name="sleep" id="sleep">
-            </div>
-
-            <div class="question">
-                <label for="weight">Enter your weight (kg)</label>
-                <input type="number" name="weight" id="weight">
-            </div>
-
-            <div class="question">
-                <label for="height">Enter your height (cm)</label>
-                <input type="number" name="height" id="height">
-            </div>
-
-            <div class="question">
-                <label for="vegetables">Do you eat vegetables?</label>
-                <select name="select-vegetables" id="vegetables">
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
-                </select>
-            </div>
-
-            <div class="question">
-                <label for="fruit">Do you eat fruits everyday?</label>
-                <select name="select-fruit" id="fruit">
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
-                </select>
-            </div>
-
-            <div class="question">
-                <label for="vegetables">How often do you eat snacks?</label>
-                <select name="select-snack" id="vegetables">
-                    <option value="1">Once a week</option>
-                    <option value="2">Twice a week</option>
-                    <option value="3">Three or more a week</option>
-                </select>
-            </div>
-
-            <div class="question">
-                <label for="water">How many glasses of water do you drink each day?</label>  
-                <input type="number" name="weight" id="weight">
-            </div>
-
-            <div class="question">
-                <label for="train">Do you often train your body?</label>
-                <select name="select-age" id="train">
-                    <option value="1">Yes</option>
-                    <option value="0">No</option>
-                </select>
-            </div>
-
-
-
-            <div class="btn-container"><div class="submit-button">Submit</div></div>
-        </form>
+        <!-- </form> -->
     </section>
 
     <section class="result gray-bg">
         <div class="meter-container">
             <div class="card" id="sleep-m">
+                <div class="card-overlay"></div>
                 <label for="sleep-meter">Sleep Health:</label>
                 <div class="meter">
                     <div class="value">0%</div>
                 </div>
+
+                <p id="sleep-desc"></p>
             </div>
             
-            <div class="card" id="fit-m">
-                <label for="fit-meter">Fit Health:</label>
-                <div class="meter">
-                    <div class="value">0%</div>
-                </div>
-            </div>
+            
             <div class="card" id="nutrition-m">
+                <div class="card-overlay"></div>
                 <label for="nutrition-meter">Nutrition Health:</label>
                 <div class="meter">
                     <div class="value">0%</div>
                 </div>
+
+                <p id="nutrition-desc"></p>
             </div>
+
+            <div class="card" id="fit-m">
+                <div class="card-overlay"></div>
+                <label for="fit-meter">Fit Health:</label>
+                <div class="meter">
+                    <div class="value">0%</div>
+                </div>
+                
+                <p id="fit-desc"></p>
+            </div>
+
             <div class="card" id="overall-m">
+                <div class="card-overlay"></div>
                 <label for="overall-meter">Overall Health:</label>
                 <div class="meter">
                     <div class="value">0%</div>
                 </div>
+
+                <p id="overall-desc"></p>
             </div>
         </div>
     </section>
 </body>
 <script src="script/script2.js"></script>
+<!-- <script src="script/script3.js"></script> -->
 <script src="script/hamburger.js"></script>
 </html>
