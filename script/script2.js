@@ -1,5 +1,7 @@
 // let sleep, nutrition, fit, overall, meters = document.querySelectorAll(".card");;
 const $form = $(".form");
+let $retake = $(".retake-button");
+$retake.hide(200);
 
 const calculateResult = () => {
     sleep = 1 - Math.abs((parseFloat(localStorage.getItem("sleep")) + 9 - parseFloat(localStorage.getItem("age"))) / (24 + 9 - parseFloat(localStorage.getItem("age"))));
@@ -96,8 +98,17 @@ const updateMeter = (meterCard, endValue, color, maxValue = 1000) => {
 }
 
 const removeCardOverlay = () => {
-    document.querySelectorAll(".card-overlay").forEach(element => element.remove());
+    $(".card-overlay").hide(200);
 }
+
+const restoreCardOverlay = () => {
+    $(".card-overlay").show(200);
+}
+
+let meters = document.querySelectorAll(".card");
+    let colors = Array.from(meters).map(element => {
+        return getComputedStyle(element.querySelector(".meter")).backgroundColor;
+    });
 
 const prepareUpdate = () => {
 
@@ -108,11 +119,6 @@ const prepareUpdate = () => {
 
     datas = [parseFloat(localStorage.getItem("sleep")), parseFloat(localStorage.getItem("nutrition")), 
                 parseFloat(localStorage.getItem("fit")), parseFloat(localStorage.getItem("overall"))];
-
-    let meters = document.querySelectorAll(".card");
-    let colors = Array.from(meters).map(element => {
-        return getComputedStyle(element.querySelector(".meter")).backgroundColor;
-    });
 
     let cards = [];
 
@@ -133,7 +139,14 @@ document.querySelector(".submit-button").addEventListener("click", () => {
         calculateResult();
         $form.slideUp(800);
         prepareUpdate();
+        $retake.show(200);
     }
 });
 
+$retake.click(function(){
+    localStorage.clear();
+    restoreCardOverlay();
+    $form.slideDown(800);
+    $retake.hide(200)
+});
 

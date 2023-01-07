@@ -94,11 +94,22 @@ nav {
     padding-top: 5rem;
     background-image: url(../images/26669.jpg);
     background-size: 50%;
+    animation: moving-background 60s linear infinite;
 }
 
 .form{
     padding: 1rem;
     background-color: aliceblue;
+}
+
+@keyframes moving-background{
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position-x: 100%;
+    }
 }
 
 .question{
@@ -159,13 +170,45 @@ nav {
     justify-content: center;
     align-items: center;
     height: 60px;
+    width: 100%;
 }
 
 .submit-button{
+    position: relative;
     font-size: 20px;
     background-color: var(--pastel-blue);
     padding: 0.5rem 1rem;
     border: solid 1px black;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.submit-button::before{
+    position: absolute;
+    content: "";
+    top: -10%;
+    left: -10%;
+    width: 110%;
+    height: 110%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 200ms ease-in-out;
+}
+
+.submit-button:hover::before{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.retake-button{
+    background-color: white;
+    width: 10rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.result{
+    position: relative;
 }
 
 .result label{
