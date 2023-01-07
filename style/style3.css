@@ -104,8 +104,8 @@ nav {
 }
 
 .forum-container{
-    /* display: grid;
-    grid-template-columns: 3fr 1fr; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     padding: 10%;
     padding: 2rem;
     /* background-image: url(../images/26669.jpg); */
@@ -114,13 +114,12 @@ nav {
 }
 .sub-header{
     display: flex;
-    background-image:linear-gradient(270deg, rgb(239, 248, 196), rgb(194, 255, 153));
+    background-image:linear-gradient(0deg, rgb(232, 255, 118), rgb(102, 255, 0));
     width: 100%;
 }
 
 .forum-h{
     height: 100%;
-    width: 50%;
     /* background-color: aliceblue; */
 
 }
@@ -133,17 +132,17 @@ nav {
 
 .followed-h{
     height: 100%;
-    width: 50%;
     /* background-color: aliceblue; */
 
 }
 
 .topic-container{
+    padding: 1rem;
     padding-bottom: 5vh;
 }
 
 .forum{
-    width: 50%;
+    width: 100%;
     padding-left: 1rem;
 }
 
@@ -158,12 +157,33 @@ nav {
 
 .desc{
     text-align: justify;
+    margin-bottom: 1rem;
 }
 
 .title{
     padding: 1rem;
     color: rgb(255, 255, 255);
     /* background-image:linear-gradient(0deg, rgb(239, 248, 196), rgb(194, 255, 153)); */
+}
+
+.follow-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: rgba(0, 0, 0, 0.212) 1px solid;
+}
+
+.follow-container img{
+    width: 4rem;
+}
+
+.follow-content h4{
+    margin-bottom: 4px;
+}
+
+.time{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 725px){
