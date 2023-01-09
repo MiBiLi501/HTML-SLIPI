@@ -1,4 +1,5 @@
 :root{
+    --lotion-blue: rgb(88, 150, 242);
     --light-green: rgb(86, 202, 111);
     --yellowish-green: rgb(169, 255, 58);
     --pastel-blue: rgb(149, 255, 255);
@@ -6,6 +7,8 @@
     --sleep-meter: rgb(163, 255, 255);
     --fit-meter: rgb(184, 131, 233);
     --nutrition-meter: rgb(241, 210, 164);
+    --pink: rgb(255, 118, 196);
+    --reddish-pink: rgb(255, 0, 111);
 }
 
 *{
@@ -24,7 +27,7 @@ body{
 
     height: 70px;
     /* background-color:rgb(86, 202, 111); */
-    background-image: linear-gradient(180deg, var(--light-green), var(--yellowish-green));
+    background-image: linear-gradient(180deg, var(--lotion-blue), var(--pastel-blue));
     border-bottom: 1px solid rgba(255, 255, 255, 0.76);
 }
 
@@ -71,7 +74,7 @@ nav {
 }
 
 .dropdown-menu{
-    background-image: linear-gradient(180deg, var(--yellowish-green), var(--light-green));
+    background-image: linear-gradient(180deg, var(--pastel-blue), var(--lotion-blue));
 }
 
 .menu-item{
@@ -114,7 +117,7 @@ nav {
 }
 .sub-header{
     display: flex;
-    background-image:linear-gradient(0deg, rgb(232, 255, 118), rgb(102, 255, 0));
+    background-image:linear-gradient(0deg, var(--pink), var(--reddish-pink));
     width: 100%;
 }
 
@@ -197,5 +200,8 @@ nav {
 
     .header-menu{
         justify-content: space-between;
+    }
+    .forum-container{
+        grid-template-columns: 1fr;
     }
 }

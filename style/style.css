@@ -1,3 +1,8 @@
+:root{
+    --lotion-blue: rgb(88, 150, 242);
+    --pastel-blue: rgb(149, 255, 255);
+    }
+
 *{
     margin: 0;
     padding: 0;
@@ -57,8 +62,7 @@ p {
     position: relative;
     border-radius: 2px;
     margin: 2rem 0;
-    background-image: linear-gradient(180deg, rgb(86, 202, 111), rgb(169, 255, 58));
-    color: rgb(0, 0, 0);
+    background-image: linear-gradient(180deg, var(--pastel-blue), var(--lotion-blue));    color: rgb(0, 0, 0);
     text-align: center;
     /* display: flex; */
     align-items: center;
@@ -75,8 +79,8 @@ p {
 
     height: 70px;
     /* background-color:rgb(86, 202, 111); */
-    background-image: linear-gradient(180deg, rgb(86, 202, 111), rgb(169, 255, 58));
-    border-bottom: 1px solid rgba(255, 255, 255, 0.76);
+    background-image: linear-gradient(180deg, var(--lotion-blue), var(--pastel-blue));
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.76); */
 }
 
 h1.logo{
@@ -107,8 +111,7 @@ h1.logo{
 }
 
 .dropdown-menu{
-    background-image: linear-gradient(180deg, rgb(169, 255, 58), rgb(86, 202, 111));
-}
+    background-image: linear-gradient(180deg, var(--pastel-blue), var(--lotion-blue));}
 
 .menu-item{
     display: flex;
@@ -213,15 +216,8 @@ nav {
     padding-right: 2rem;
 }
 
-.d-none {
-    display: none
-}
 .gray-bg{
     background-color: rgb(247, 247, 247);
-}
-
-.gap-10px{
-    gap: 10px;
 }
 
 @media screen and (max-width: 1000px){
