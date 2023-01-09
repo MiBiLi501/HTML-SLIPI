@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/template.css">
     <link rel="stylesheet" href="style/style3.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -38,11 +39,11 @@
             <div class="menu-item"><a href="/test.html">Start</a></div>
                 </div>
                 <section class="forum-container">
-            <!-- <div class="sub-header"></div> -->
             <div class="content">
-                <div class="forum">
-                    <div class="sub-header forum-h">
+                <div id="forum">
+                    <div class="sub-header" id="forum-h">
                         <h1 class="title">Forum</h1>
+                        <a href="#followed">Check followed</a>
                     </div>
                     <div class="topic-container">
             
@@ -96,11 +97,16 @@
                         </p>
                         <a class="view" href="#">Join in the discussion</a>
                     </div>
+
+                    <div class="extra-forum">
+                        <p>View more...</p>
+                        <p>Open new discussion</p>
+                    </div>
                 </div>
             
             </div>
             <div class="content">
-                <div class="followed">
+                <div id="followed">
                     <div class="sub-header followed-h">
                         <h1 class="title">Followed</h1>
                     </div>
@@ -129,6 +135,6 @@
             </div>
         </div>
     </section>
+    <script src="script/hamburger.js"></script>
 </body>
-<script src="script/hamburger.js"></script>
 </html>
