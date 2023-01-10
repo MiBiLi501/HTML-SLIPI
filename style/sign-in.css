@@ -4,6 +4,7 @@ body{
 }
 
 section{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,14 +12,16 @@ section{
 }
 
 .card{
-    position: relative;
+    position: absolute;
     /* padding-left: 5rem; */
-    width: 25%;
+    min-width: 372px;
+    top: 20%;
+    width: 30%;
     height: 50%;
 }
 
 .card-button{
-    width: 50%;
+    width: 100%;
 }
 
 .input{

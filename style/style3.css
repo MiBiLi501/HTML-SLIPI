@@ -38,6 +38,7 @@
 .topic-container{
     padding: 1rem;
     padding-bottom: 5vh;
+    border-bottom: rgba(0, 0, 0, 0.212) 1px solid;
 }
 
 #forum{
