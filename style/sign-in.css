@@ -11,10 +11,44 @@ section{
 }
 
 .card{
-    width: 75%;
+    position: relative;
+    /* padding-left: 5rem; */
+    width: 25%;
     height: 50%;
+}
+
+.card-button{
+    width: 50%;
+}
+
+.input{
+    color: rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0, 0.2);
+    transition: border 500ms ease-in-out;
+}
+
+.input:focus{
+    border: none;
+}
+
+.text-title{
+    margin-bottom: 2rem;
 }
 
 .container{
     position: relative;
+}
+
+.superballs{
+    position: absolute;
+    --uib-size: 105px;
+    top: 40%;
+    right: 20%;
+    transition: var(--uib-size) 500ms ease-in-out;
+}
+
+@media screen and (max-width: 725px){
+    .superballs{
+        --uib-size: 45px;
+    }
 }

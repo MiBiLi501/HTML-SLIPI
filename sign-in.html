@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/button.css">
     <link rel="stylesheet" href="style/card.css">
     <link rel="stylesheet" href="style/input.css">
+    <link rel="stylesheet" href="style/superballs.css">
     <link rel="stylesheet" href="style/sign-in.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <title>SLIPI</title>
@@ -45,17 +46,24 @@
     <section>
         <div class="card">
             <div class="card-details">
-                <p class="text-title">Card title</p>
-                <p class="text-body form">
-                    <input class="input" type="text" placeholder="E-mail">
+                <p class="text-title">Login</p>
+                <div class="form">
+                    <input class="input" type="email" placeholder="E-mail">
                     <span class="input-border"></span>
-                </p>
                 </div>
-                <div class="card-button-container">
-                    <div class="container"><button class="card-button">Log in</button></div>
-                    <div class="container"><button class="card-button">Forget password?</button></div>
+                <div class="form">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="input-border"></span>
+                </div>
+                <div class="superballs">
+                    <div class="superballs__dot"></div>
+                    <div class="superballs__dot"></div>
+                </div>
             </div>
-          </div>
+            <div class="card-button-container">
+                <div class="container"><button class="card-button">Forget password?</button></div>
+            </div>
+        </div>
     </section>
 
     <script src="script/hamburger.js"></script>
