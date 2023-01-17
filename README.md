@@ -1,4 +1,4 @@
-# Final Project HHCI - SLIPI
+# Final Project HCI - SLIPI
 ## Member
 - ### Michail 2602118894 L1AC
 - ### Raja 2602202961 L1AC
